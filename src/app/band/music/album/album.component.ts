@@ -12,6 +12,15 @@ export class AlbumComponent implements OnInit {
   
   constructor() { }
 
+
+  isPlaying: boolean = false;
+
+
+
+  handlePlay(){
+    this.isPlaying = !this.isPlaying;
+  }
+
   ngOnInit(): void {
     
   }
