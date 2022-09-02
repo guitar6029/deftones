@@ -1,0 +1,20 @@
+<div class="album">
+  <div class="album_description">
+    <div class="album_image_container">
+      <img src="{{ album.image }}" alt="{{ album.name }}" />
+    </div>
+    <div>
+      <h2>
+        {{ album.name }}
+      </h2>
+      <h5>
+        {{ album.year }}
+      </h5>
+    </div>
+  </div>
+  <div class="album_tracks" *ngFor="let track of album.tracks">
+    <ul>
+      <li> {{ track.name }}, {{ track.length }}</li>
+    </ul>
+  </div>
+</div>
