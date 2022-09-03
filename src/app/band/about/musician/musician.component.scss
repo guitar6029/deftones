@@ -1,0 +1,78 @@
+.bass {
+    //background-image: url("../../../assets/images/Slice_5.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid rgb(87, 85, 85);
+  }
+  .card-md {
+    width: 200px;
+    height: 400px;
+  }
+
+  .card-lg {
+    transition: width 0.3s ease-in;
+    width: 300px;
+    height: 400px;
+  }
+
+  .card-md > img, .card-lg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .drums {
+    //background-image: url("../../../assets/images/Slice_2.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .guitar {
+    //background-image: url("../../../assets/images/Slice_4.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  // .musician {
+  
+  //   background-color: rgb(37, 35, 35);
+  //   color: #fff;
+  //   padding-top: 25px;
+  //   font-size: 25px;
+  //   writing-mode: vertical-rl;
+  //   text-orientation: upright;
+  // }
+  
+  .musician {
+    background-color: rgb(37, 35, 35);
+    color: #fff;
+    padding-top: 25px;
+    font-size: 25px;
+  }
+  
+  .tint {
+      opacity: 0.5;
+  }
+  
+  .card:hover > .tint {
+      opacity: 1;
+  }
+  
+  .musician_bg {
+    //background-image: url("../../../../assets/images/");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .vocals {
+    background-image: url("../../../../assets/images/Slice_3.png");
+    background-position: center;
+    background-size: cover;
+  }
+  

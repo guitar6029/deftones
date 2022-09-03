@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BandComponent } from './band/band.component';
-import { MusicianComponent } from './band/musician/musician.component';
+import { MusicianComponent } from './band/about/musician/musician.component';
 import { NavComponent } from './band/nav/nav.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ShopComponent } from './band/shop/shop.component';

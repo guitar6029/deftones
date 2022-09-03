@@ -1,1 +1,25 @@
-<p>about works!</p>
+<!-- <div class="about">
+    <div class="card">
+        <div class="musician">Vocals</div>
+        <div class="vocals card-md tint"></div>
+    </div>
+    <div class="card">
+        <div class="musician">Guitar</div>
+        <div class="guitar card-md tint"></div>
+    </div>
+    <div class="card">
+        <div class="musician">Drums</div>
+        <div class="drums card-md tint"></div>
+    </div>
+    <div class="card">
+        <div class="musician">Bass</div>
+        <div class="bass card-md tint"></div>
+    </div>
+    <div class="card">
+        <div class="musician">Synth</div>
+        <div class="synth card-md tint"></div>
+    </div>
+</div> -->
+<div class="about" >
+  <app-musician *ngFor="let musician of musicians" [musician]="musician" ></app-musician>  
+</div>

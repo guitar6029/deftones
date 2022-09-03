@@ -1,0 +1,4 @@
+<div class="card" (click)="toggleSize()">
+    <div class="musician">{{musician.instrument}}</div>
+    <div [ngClass]="(clickedOnCard) ?  'card-lg tint' : 'card-md tint' "><img src="{{musician.image}}" atl="musician" /></div>
+</div>
