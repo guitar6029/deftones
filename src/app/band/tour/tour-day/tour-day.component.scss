@@ -16,7 +16,7 @@
     font-size: 20px;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     color: rgb(87, 85, 85);
   }
 }
@@ -30,16 +30,16 @@
   border-bottom: 2px solid gray;
 }
 
+@media only screen and (max-width: 700px) {
+  .tour_day {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-@media only screen and (max-width: 700px){
-    .tour_day{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .date, .location, .tickets  {
-        width: 200px;
-      }
-      
-      
+  .date,
+  .location,
+  .tickets {
+    width: 200px;
+  }
 }
