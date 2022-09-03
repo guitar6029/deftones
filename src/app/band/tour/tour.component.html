@@ -1,1 +1,9 @@
-<p>tour works!</p>
+
+<div class="tour">
+    <div>
+        <h3 class="tour_title">Upcoming Dates</h3>
+    </div>
+    <div *ngFor="let tour of tours">
+        <app-tour-day [tour]="tour"></app-tour-day>
+    </div>
+</div>

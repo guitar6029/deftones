@@ -12,6 +12,7 @@ import { AboutComponent } from './band/about/about.component';
 import { TourComponent } from './band/tour/tour.component';
 import { MusicComponent } from './band/music/music.component';
 import { AlbumComponent } from './band/music/album/album.component';
+import { TourDayComponent } from './band/tour/tour-day/tour-day.component';
 
 const routes = [
   {path: '' , component: BandComponent},
@@ -31,7 +32,8 @@ const routes = [
     AboutComponent,
     TourComponent,
     MusicComponent,
-    AlbumComponent
+    AlbumComponent,
+    TourDayComponent
   ],
   imports: [
     BrowserModule,

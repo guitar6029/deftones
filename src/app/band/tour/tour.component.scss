@@ -1,0 +1,9 @@
+.tour {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  .tour_title {
+    font-size: 45px;
+  }
+}
