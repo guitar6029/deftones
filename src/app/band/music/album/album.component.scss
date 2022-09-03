@@ -9,6 +9,11 @@
   min-height: 500px;
 }
 
+.album_description{
+  text-align: center;
+}
+
+
 .album_tracks_description {
   display: flex;
   flex-direction: column;
@@ -27,6 +32,13 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .row {
@@ -58,7 +70,7 @@
 }
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 1000px){
     .album{
         flex-direction: column;
     }

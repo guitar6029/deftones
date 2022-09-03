@@ -1,6 +1,11 @@
 <div class="album">
-  <div class="album_image">
-    <img src="{{ album.image }}" alt="{{ album.name }}" />
+  <div class="flex_row">
+    <div class="album_image">
+      <img src="{{ album.image }}" alt="{{ album.name }}" />
+    </div>
+    <div class="album_description">
+      <h3>{{album.name}}, {{album.year}}</h3>
+    </div>
   </div>
   <div class="album_track_description">
     <div class="row" *ngFor="let track of album.tracks">
