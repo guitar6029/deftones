@@ -1,5 +1,15 @@
 .merch_detailed{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #fff;
+    .merch_image{
+        width: 500px;
+        height: 500px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
 }

@@ -23,10 +23,11 @@ export class MerchDetailedComponent implements OnInit {
     
       this.id = this.route.snapshot.params['id'];
       console.log('ID : ', this.id);
-      this.merchItem = this.merchService.getMerchItemById(this.route.snapshot.params['id'])
-      this.merchTitle = this.merchItem.title;
-      this.merchImage = this.merchItem.image;
-      this.merchPrice = this.merchItem.price;
+      //this.merchItem = 
+      this.merchService.getMerchItemById(this.route.snapshot.params['id']);
+      // this.merchTitle = this.merchItem.title;
+      // this.merchImage = this.merchItem.image;
+      // this.merchPrice = this.merchItem.price;
       
   }
 
