@@ -1,11 +1,28 @@
 .merch_item {
-    width: 400px;
-    height: 500px;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  color: #fff;
+  cursor: pointer;
+  .merch_image {
+    :hover {
+      transition: all 0.3s ease-in;
+      background-color: #5a5656;
+    }
+  }
 }
 
-.merch_item > .merch_image > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.merch_item > .merch_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.merch_title {
+  :hover {
+    text-decoration: underline;
+  }
 }

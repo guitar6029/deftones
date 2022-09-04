@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { AlbumComponent } from './band/music/album/album.component';
 import { TourDayComponent } from './band/tour/tour-day/tour-day.component';
 import { MerchComponent } from './merch/merch.component';
 import { MerchItemComponent } from './merch/merch-item/merch-item.component';
+import { MerchDetailedComponent } from './merch/merch-detailed/merch-detailed.component';
 
 const routes = [
   {path: '' , component: BandComponent},
@@ -22,7 +23,8 @@ const routes = [
   {path: 'about', component : AboutComponent}, 
   {path: 'tour', component : TourComponent}, 
   {path: 'music', component : MusicComponent},
-  {path: 'merch', component: MerchComponent} 
+  {path: 'merch', component: MerchComponent} ,
+  {path: 'merch/:id', component: MerchDetailedComponent}
 ]
 
 @NgModule({
@@ -38,7 +40,8 @@ const routes = [
     AlbumComponent,
     TourDayComponent,
     MerchComponent,
-    MerchItemComponent
+    MerchItemComponent,
+    MerchDetailedComponent
   ],
   imports: [
     BrowserModule,
