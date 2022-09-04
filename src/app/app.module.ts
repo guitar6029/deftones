@@ -13,13 +13,16 @@ import { TourComponent } from './band/tour/tour.component';
 import { MusicComponent } from './band/music/music.component';
 import { AlbumComponent } from './band/music/album/album.component';
 import { TourDayComponent } from './band/tour/tour-day/tour-day.component';
+import { MerchComponent } from './merch/merch.component';
+import { MerchItemComponent } from './merch/merch-item/merch-item.component';
 
 const routes = [
   {path: '' , component: BandComponent},
   {path: 'shop', component : ShopComponent}, 
   {path: 'about', component : AboutComponent}, 
   {path: 'tour', component : TourComponent}, 
-  {path: 'music', component : MusicComponent}, 
+  {path: 'music', component : MusicComponent},
+  {path: 'merch', component: MerchComponent} 
 ]
 
 @NgModule({
@@ -33,7 +36,9 @@ const routes = [
     TourComponent,
     MusicComponent,
     AlbumComponent,
-    TourDayComponent
+    TourDayComponent,
+    MerchComponent,
+    MerchItemComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
 
   @HostListener("window:resize", ['$event'])
   onResize(event: any){
-    if(this.toggleDisplay && ( window.innerWidth >= 470 )){
+    if(this.toggleDisplay && ( window.innerWidth >= 450 )){
       this.toggleDisplay = !this.toggleDisplay;
     }
     //console.log(window.innerWidth);
