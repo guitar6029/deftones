@@ -39,6 +39,7 @@ export class MerchService {
   ];
 
   myItem: Merch = {} as Merch;
+  
 
   constructor() {}
 
@@ -51,12 +52,12 @@ export class MerchService {
      this.items.map((item) => {
        if(item.id == id){
         console.log(item);
+        this.myItem = item;
+        //return this.myItem ;
        }
-       else{
-        console.log('no item found with that id');
-       }
+      
       })
-      //return null;
+      return this.myItem ;
     }
       
 

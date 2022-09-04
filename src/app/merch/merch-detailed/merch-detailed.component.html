@@ -1,10 +1,46 @@
-<!-- <div class="merch_detailed">
-   <div class="merch_image">
-        <img src="{{merchImage}}"  alt="{{merchTitle}}"/>
-   </div>
-   <div class="merch_options">
-         <div class="top">
-            <div><h3>{{merchTitle}}</h3></div>
-         </div>
-   </div>
-</div> -->
+<div class="merch_detailed">
+  <div class="merch_image">
+    <img src="{{ merchImage }}" alt="{{ merchTitle }}" />
+  </div>
+  <div class="merch_options">
+    <div class="top">
+      <div>
+        <h3>{{ merchTitle }}</h3>
+      </div>
+      <div>{{ merchPrice | currency }}</div>
+    </div>
+    <hr />
+    <div class="center">
+      <div class="center_title">Size</div>
+      <div class="merch_item_size"><h3>Small</h3></div>
+      <div class="merch_item_size"><h3>Medium</h3></div>
+      <div class="merch_item_size"><h3>Large</h3></div>
+      <div class="merch_item_size"><h3>X-Large</h3></div>
+    </div>
+    <div class="bottom">
+      <div class="quantity">
+        <div>
+          <button
+            class="quantity_button"
+            (click)="incrementMerchItemQuantity()"
+          >
+            +
+          </button>
+        </div>
+        <div class="quantity_value">{{ defaultQuantityNumber }}</div>
+        <div>
+          <button
+            class="quantity_button"
+            (click)="decrementMerchItemQuantity()"
+          >
+            -
+          </button>
+        </div>
+      </div>
+      <div class="purchase">
+        <div class="button_container"><button class="purchase_button">Add to Cart</button></div>
+        <div><button class="purchase_button">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+</div>
