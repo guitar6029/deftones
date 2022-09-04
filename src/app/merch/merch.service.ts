@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Merch } from '../types/Merch';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MerchService {
 
-  constructor() { }
-  getMerch(){
-    return [
+  items : Merch []= [
+    
       {
         id: 1,
         image : '../../assets/images/DEFTONES_approvedmerchapril2022-blackreaper_1728x.jpeg',
@@ -32,6 +32,24 @@ export class MerchService {
         title : 'Deftones Hoodie',
         price: 55
       }
-    ]
+    
+  ]
+  
+  myItem : Merch = {}  as Merch;
+
+  constructor() { }
+  getMerch(){
+    return this.items; 
+  }
+
+  getMerchItemById(id: number){
+      this.items.find((item) => {
+        if(item.id === id)
+        console.log(item);
+          this.myItem = item;
+          return this.myItem;
+       })
+
+       return this.myItem;
   }
 }
