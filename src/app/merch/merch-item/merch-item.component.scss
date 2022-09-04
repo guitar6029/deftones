@@ -13,9 +13,12 @@
       background-color: #5a5656;
     }
   }
+  a{
+    text-decoration: none;
+  }
 }
 
-.merch_item > .merch_image > img {
+.merch_item > .merch_image > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
