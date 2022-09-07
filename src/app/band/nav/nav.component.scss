@@ -1,23 +1,10 @@
 .hamburger_menu {
+  
   position: absolute;
   top: 5px;
   left: 2px;
   cursor: pointer;
-  :hover{
-  animation-name: rotate;
-  animation-duration: 0.3s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(160deg);
-    }
-  }
+  
   div {
     margin-bottom: 10px;
     width: 40px;
@@ -45,11 +32,11 @@ nav {
     margin-left: 40px;
     font-size: 30px;
   }
-  // #deftones:hover{
-  //     transition: all 0.2s ease-in;
-  //     color: #000;
-  //     background-color: #f8f3f3;
-  // }
+  #deftones:hover{
+      transition: all 0.2s ease-in;
+      color: #000;
+      background-color: #1e1a1a;
+  }
   a {
     padding: 10px;
     margin-left: 20px;
@@ -61,10 +48,12 @@ nav {
     color: #000;
     background-color: #f8f3f3;
   }
+
+
 }
 
 @media only screen and (min-width: 600px) {
-  #hamburger_menu {
+  .hamburger_menu {
     display: none;
   }
 }

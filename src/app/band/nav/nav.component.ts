@@ -26,8 +26,7 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit(): void {
-    //this.screenWidth = window.innerWidth;
-    //console.log('Screen width : ', this.screenWidth);
+    
   }
 
 }
