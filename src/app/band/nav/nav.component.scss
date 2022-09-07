@@ -1,15 +1,31 @@
-#hamburger_menu{
-    position: absolute;
-    top: 5px;
-    left: 2px;
-    
-    cursor: pointer;
-    div{
-        margin-bottom: 10px;
-        width: 40px;
-        height: 5px;
-        background-color: #f8f3f3;
+.hamburger_menu {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  cursor: pointer;
+  :hover{
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
     }
+    100% {
+      transform: rotate(160deg);
+    }
+  }
+  div {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 5px;
+    background-color: #f8f3f3;
+  }
+
+  
 }
 
 nav {
@@ -47,15 +63,15 @@ nav {
   }
 }
 
-@media only screen and (min-width: 600px){
-    #hamburger_menu{
-        display: none;
-    }
+@media only screen and (min-width: 600px) {
+  #hamburger_menu {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 650px){
-  nav{
-    a{
+@media only screen and (max-width: 650px) {
+  nav {
+    a {
       margin-left: 5px;
     }
   }
@@ -65,7 +81,7 @@ nav {
   nav {
     flex-direction: column;
     height: auto;
-    
+
     div:hover {
       text-align: center;
       transition: all 0.2s ease-in;
@@ -73,14 +89,13 @@ nav {
       width: 100%;
       background-color: #f8f3f3;
     }
-   
+
     a:hover {
       transition: none;
       background-color: transparent;
     }
-    #deftones{
-        margin: 0;
-       
+    #deftones {
+      margin: 0;
     }
   }
 }
